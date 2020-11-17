@@ -31,7 +31,8 @@ if __name__ == '__main__':
         if choice_check == "yes":
             write_into_csv(student_info_list)
             
-            condition_check= input("Enter (yes/no) if you want to information of another student: ")
+            condition_check= input("Enter (yes/no) if you want enter to information of another student: ")
+            
             if condition_check == "yes":
                 condition = True
                 student_num = student_num + 1
