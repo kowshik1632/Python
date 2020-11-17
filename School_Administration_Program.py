@@ -22,8 +22,12 @@ if __name__ == '__main__':
 #split
 
         student_info_list = student_info.split(' ')
-
-        print("\nThe entered information is -\nName: {}\nAge: {}\nContact_number: {}\nE-Mail ID: {}"
+    
+        if ((len(student_info_list) > 4) | (len(student_info_list < 4)):
+            print('Malformed Input, Please check for additional spaces!')
+            choice_check = "no"
+        else:
+            print("\nThe entered information is -\nName: {}\nAge: {}\nContact_number: {}\nE-Mail ID: {}"
               .format(student_info_list[0],student_info_list[1],student_info_list[2],student_info_list[3]))
 
         choice_check = input("Is the entered information correct? (yes/no): ")
@@ -31,7 +35,8 @@ if __name__ == '__main__':
         if choice_check == "yes":
             write_into_csv(student_info_list)
             
-            condition_check= input("Enter (yes/no) if you want to information of another student: ")
+            condition_check= input("Enter (yes/no) if you want enter to information of another student: ")
+            
             if condition_check == "yes":
                 condition = True
                 student_num = student_num + 1
