@@ -22,8 +22,11 @@ if __name__ == '__main__':
 #split
 
         student_info_list = student_info.split(' ')
-
-        print("\nThe entered information is -\nName: {}\nAge: {}\nContact_number: {}\nE-Mail ID: {}"
+    
+        if ((len(student_info_list) > 4) | (len(student_info_list < 4)):
+            print('Malformed Input, Please check for additional spaces!')
+        else:
+            print("\nThe entered information is -\nName: {}\nAge: {}\nContact_number: {}\nE-Mail ID: {}"
               .format(student_info_list[0],student_info_list[1],student_info_list[2],student_info_list[3]))
 
         choice_check = input("Is the entered information correct? (yes/no): ")
